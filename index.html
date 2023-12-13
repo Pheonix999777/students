@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="head">
+            <h1 class="head__titile">Exam results</h1>
+           <button class="head__btn">Add new student  <span class="head__svg"><img src="img/+.svg" alt=""></span> </button>
+        </div>
+        <div class="add-students ">
+            <div class="students__div">
+                <div class="students__wrapper">
+                    <h2 class="form__title">Add student</h2>
+                    <button class="form__close "><svg xmlns="http://www.w3.org/2000/svg" width="20" height="22" viewBox="0 0 24 25" fill="none">
+                        <path d="M18 6.5L6 18.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M6 6.5L18 18.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg></button>    
+                </div>
+                <form class="form" action="#">  
+                    <div class="form__inp-div">
+                        <span class="form__inp-title">Name</span>
+                        <input class="form__input" type="text" name="name" placeholder="Falonchi">
+                    </div>  
+                    <div class="form__inp-div">
+                        <span class="form__inp-title">Lastname</span>
+                        <input class="form__input2" type="text" name="Lastname" placeholder="Pismadonchi">
+                    </div>  
+                    <div class="form__inp-div">
+                        <span class="form__inp-title">Mark</span>
+                        <input class="form__input3" type="number" name="number" placeholder="150">
+                    </div>  
+                    <button class="form__btn" type="submit">Add student</button>
+                </form>
+            </div>
+            
+        </div>
+     <section class="white">
+        <form class="dark">
+            <h2 class="dark__word">Filter</h2>
+            <div class="dark__inputs">
+                <p class="dark__inputs-text">Search</p>
+                <input class="dark__inp" type="text" name="name" placeholder="Falonchi">
+            </div>
+            <div class="dark__div">
+                <h2 class="dark__inputs-text">Mark</h2>
+                    <input class="dark__input" type="number" placeholder="From">
+                    <input class="dark__input2" type="number" placeholder="To">
+            </div>
+            <div class="dark__div2">
+                <h2 class="dark__inputs-text">Sort by</h2>
+                <button class="dark__div2-btn">Name <span><svg xmlns="http://www.w3.org/2000/svg" width="15" height="9" viewBox="0 0 15 9" fill="none">
+                    <path d="M1.5 1.5L7.5 7.5L13.5 1.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg></span></button>
+            </div>
+            <button class="dark__botton" type="submit">Filter</button>
+        </form>
+        <div class="first">
+            <div class="first__div">
+                <h2 class="first__title">Students list</h2>
+                <div class="first__wrapper">
+                    <span class="first__wrapper-text">Count: 4 </span>
+                    <span class="first__wrapper-text">Average mark: 65%</span>
+                </div>
+            </div>
+            <table class="table">
+                <thead class="table__head">
+                    <tr class="table__head-tr">
+                        <th>ID</th>
+                        <th>Name & Lastname</th>
+                        <th>Marked date</th>
+                        <th>Mark</th>
+                        <th>Status</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+
+              <tbody class="tbody">
+                <!-- <tr class="table__body">
+                     <td>100</td>
+                    <td class="td__text"> Ibrohimjon Alimuhammedov</td>
+                    <td>05.12.2021 05:00</td>
+                    <td>94%</td>
+                    <td class="td__style">Pass</td>
+                    <td>
+                        <button class="td__btn">
+                            <img src="img/edit.svg" alt="">
+                        </button></td>
+                            <td>
+                                <button class="td__btn2">
+                                    <img class="td__btn2-img" src="img/trash.svg" alt="">
+
+                                </button>
+                            
+                 </td>
+                </tr> -->
+                <!-- <tr class="table__body">
+                    <td>101</td>
+                    <tdd>Asadbek</tdd>
+                    <td>06.12.2021 05:00</td>
+                    <td>97%</td>
+                    <td>Pass</td>
+                    <td><svg xmlns="http://www.w3.org/2000/svg" width="35" height="34" viewBox="0 0 35 34" fill="none">
+                        <path d="M15.8333 5.66666H5.91665C5.1652 5.66666 4.44453 5.96518 3.91318 6.49653C3.38182 7.02788 3.08331 7.74855 3.08331 8.5V28.3333C3.08331 29.0848 3.38182 29.8054 3.91318 30.3368C4.44453 30.8682 5.1652 31.1667 5.91665 31.1667H25.75C26.5014 31.1667 27.2221 30.8682 27.7534 30.3368C28.2848 29.8054 28.5833 29.0848 28.5833 28.3333V18.4167" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M26.4583 3.54166C27.0219 2.97808 27.7863 2.66146 28.5833 2.66146C29.3803 2.66146 30.1447 2.97808 30.7083 3.54166C31.2719 4.10525 31.5885 4.86964 31.5885 5.66666C31.5885 6.46369 31.2719 7.22808 30.7083 7.79166L17.25 21.25L11.5833 22.6667L13 17L26.4583 3.54166Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg></td>
+                        <td><svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
+                            <path d="M4.25 8.5H7.08333H29.75" stroke="#F32222" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M26.9166 8.5V28.3333C26.9166 29.0848 26.6181 29.8055 26.0868 30.3368C25.5554 30.8682 24.8348 31.1667 24.0833 31.1667H9.91665C9.1652 31.1667 8.44453 30.8682 7.91318 30.3368C7.38182 29.8055 7.08331 29.0848 7.08331 28.3333V8.5M11.3333 8.5V5.66667C11.3333 4.91522 11.6318 4.19455 12.1632 3.6632C12.6945 3.13185 13.4152 2.83334 14.1666 2.83334H19.8333C20.5848 2.83334 21.3054 3.13185 21.8368 3.6632C22.3681 4.19455 22.6666 4.91522 22.6666 5.66667V8.5" stroke="#F32222" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg></td>
+                </tr> -->
+              </tbody>
+            </table>
+        </div>
+     </section>
+    </div>
+    <div class="add-students2 ">
+        <div class="students__div2">
+            <div class="students__wrapper2">
+                <h2 class="form__title2">Edit</h2>
+                <button class="form__close2 "><svg xmlns="http://www.w3.org/2000/svg" width="20" height="22" viewBox="0 0 24 25" fill="none">
+                    <path d="M18 6.5L6 18.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M6 6.5L18 18.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg></button>    
+            </div>
+            <form class="form2" action="#">  
+                <div class="form__inp-div">
+                    <span class="form__inp-title">Name</span>
+                    <input class="form__input5" type="text" name="name" placeholder="Falonchi">
+                </div>  
+                <div class="form__inp-div">
+                    <span class="form__inp-title">Lastname</span>
+                    <input class="form__input6" type="text" name="Lastname" placeholder="Pismadonchi">
+                </div>  
+                <div class="form__inp-div">
+                    <span class="form__inp-title">Mark</span>
+                    <input class="form__input7" type="number" name="number" placeholder="150">
+                </div>  
+                <button class="form__btn2" type="submit">Add student</button>
+            </form>
+        </div>
+        
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
